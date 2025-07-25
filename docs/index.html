@@ -1,19 +1,10 @@
 <!doctype html>
 <html>
-    <head>
-        <!-- Add a plain CSS file: see https://trunkrs.dev/assets/#css -->
-        <!-- If using Tailwind with Leptos CSR, see https://trunkrs.dev/assets/#tailwind instead-->
-        <link rel="stylesheet" href="/style-643223e2e0282ee8.css" integrity="sha384-aVqwQUenQ93Z6n87m1jjEqhwHt8zVRMH5umkiNeHl7q4hqxrwuiql40xb9iPLawm"/>
-
-        <!-- Include favicon in dist output: see https://trunkrs.dev/assets/#icon -->
-        <!-- <link data-trunk rel="icon" href="public/favicon.ico" /> -->
-
-        <!-- include support for `wasm-bindgen --weak-refs` - see: https://rustwasm.github.io/docs/wasm-bindgen/reference/weak-references.html -->
-        <!-- Removed data-wasm-opt="z" to avoid issues if wasm-opt is not installed -->
-        
+    <head><link rel="modulepreload" href="/leptos-tutorial-f811bd93f72f47c6.js" crossorigin="anonymous" integrity="sha384-NyHcIvAR/Qq6fMM3l/yGrtmpcJzqTzJCR6o1mgtfY/TOXs9/TDi9yWcAcByXmWVM"><link rel="preload" href="/leptos-tutorial-f811bd93f72f47c6_bg.wasm" crossorigin="anonymous" integrity="sha384-y4V40Uyarsi60hh7qbMXgFefXE3nUb04GtYHBwQ7Yi9yeSfk9qyRBv6sdPZ1XeHu" as="fetch" type="application/wasm"></head>
+    <body>
 <script type="module">
-import init, * as bindings from '/alessandro_portfolio-6c4b0f29f6d1adac.js';
-const wasm = await init({ module_or_path: '/alessandro_portfolio-6c4b0f29f6d1adac_bg.wasm' });
+import init, * as bindings from '/leptos-tutorial-f811bd93f72f47c6.js';
+const wasm = await init({ module_or_path: '/leptos-tutorial-f811bd93f72f47c6_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -21,10 +12,7 @@ window.wasmBindings = bindings;
 
 dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
-</script>
-    <link rel="modulepreload" href="/alessandro_portfolio-6c4b0f29f6d1adac.js" crossorigin="anonymous" integrity="sha384-9PThqAOt1ktAHo9WgAdKH4++1B1cfDsYP1Zah+ZaKj3T7j8s5JhfkM25IMOXkxGp"><link rel="preload" href="/alessandro_portfolio-6c4b0f29f6d1adac_bg.wasm" crossorigin="anonymous" integrity="sha384-WP7kTinpIrHnMc5uScHoCQyjAl8TLLWhtxBmoWFt5v6ZsEMrXsE519YfgcfYedpc" as="fetch" type="application/wasm"></head>
-
-    <body><script>"use strict";
+</script><script>"use strict";
 
 (function () {
 
