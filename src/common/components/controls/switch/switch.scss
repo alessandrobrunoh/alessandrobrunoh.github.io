@@ -1,0 +1,25 @@
+.switch {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 8px 16px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    &.active {
+        background: rgba(0, 122, 255, 0.3);
+        border-color: rgba(0, 122, 255, 0.5);
+    }
+}

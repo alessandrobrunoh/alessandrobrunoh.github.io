@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap");
+
+body {
+    --c-glass: #bbbbbc;
+    --c-light: #fff;
+    --c-dark: #000;
+
+    --c-content: #224;
+    --c-action: #0052f5;
+
+    --c-bg: #e8e8e9;
+
+    --glass-reflex-dark: 1;
+    --glass-reflex-light: 1;
+
+    --saturation: 150%;
+
+    font-size: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    background: var(--c-bg);
+    color: var(--c-content);
+
+    transition:
+        background 400ms cubic-bezier(1, 0, 0.4, 1),
+        color 400ms cubic-bezier(1, 0, 0.4, 1);
+}
+
+body:has(input[value="dark"]:checked) {
+    --c-glass: #bbbbbc;
+    --c-light: #fff;
+    --c-dark: #000;
+
+    --c-content: #e1e1e1;
+    --c-action: #03d5ff;
+
+    --c-bg: #1b1b1d;
+
+    --glass-reflex-dark: 2;
+    --glass-reflex-light: 0.3;
+
+    --saturation: 150%;
+}
+
+body:has(input[value="dim"]:checked) {
+    --c-light: #99deff;
+    --c-dark: #20001b;
+    --c-glass: hsl(335 250% 74% / 1);
+
+    --c-content: #d5dbe2;
+    --c-action: #ff48a9;
+
+    --c-bg: #152433;
+
+    --glass-reflex-dark: 2;
+    --glass-reflex-light: 0.7;
+
+    --saturation: 200%;
+}
+
+/* //////////////////////////////////////////
+/  Article Styles //////////////////////// */
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 2em;
+}
+
+h1,
+h2,
+p,
+blockquote {
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 1.4em 0 0.6em;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 1.4em 0 0.6em;
+}
+
+p {
+    line-height: 160%;
+    margin: 0 0 1em;
+}
+
+blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 2em;
+    padding-left: 1em;
+    border-left: 0.1em solid currentColor;
+}
+
+figure {
+    margin: 1em 0 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    max-width: 600px;
+    margin-top: 1em;
+    font-size: 0.8em;
+    color: color-mix(in srgb, var(--c-content) 60%, var(--c-bg));
+}
+
+a {
+    color: var(--c-action);
+    text-decoration-thickness: 0.05em;
+    text-underline-position: under;
+    text-decoration-color: color-mix(in srgb, currentColor, transparent 70%);
+    transition:
+        color 160ms,
+        text-decoration-color 160ms;
+}
+
+a:hover {
+    color: color-mix(in srgb, var(--c-action), var(--c-content) 40%);
+    text-decoration-color: color-mix(in srgb, currentColor, transparent 30%);
+}
+
+img {
+    display: block;
+    border-radius: 0.8em;
+    width: 100%;
+    max-width: 700px;
+    aspect-ratio: 5 / 3;
+    object-fit: cover;
+}
+
+.box {
+    padding: 1em 1.4em;
+    border-top: 4px solid color-mix(in srgb, var(--c-action) 50%, transparent);
+    border-radius: 0.8em;
+    background-color: color-mix(in srgb, var(--c-action) 8%, var(--c-bg));
+    transition: background 400ms cubic-bezier(1, 0, 0.4, 1);
+}

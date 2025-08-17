@@ -1,0 +1,28 @@
+button {
+    padding: calc(var(--spacing) * 1.5);
+    border-style: solid;
+    border-radius: var(--radius-sm);
+    border-width: 1px;
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    border-width: 1px;
+    border-color: #dadce4;
+    color: black;
+    box-shadow: inset 0 -2px #6f7b901a;
+    &:hover {
+        background-color: #e4e6ed;
+        box-shadow: none;
+    }
+    &.primary {
+        color: white;
+        border-color: #0000;
+        box-shadow:
+            inset 0 -2px #053794,
+            0 1px 3px #e6effe;
+
+        background-color: #0551cf;
+        &:hover {
+            background-color: #053795;
+        }
+    }
+}

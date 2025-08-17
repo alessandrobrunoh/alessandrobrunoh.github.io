@@ -1,0 +1,20 @@
+:root {
+    --navbar-padding: 1px;
+}
+
+nav {
+    .glass-content {
+        padding: var(--navbar-padding) !important;
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1dvw;
+            justify-content: center;
+            align-content: center;
+            li {
+                display: inline-block;
+                background-color: gray;
+            }
+        }
+    }
+}

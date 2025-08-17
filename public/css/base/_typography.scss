@@ -1,0 +1,92 @@
+/* Base Typography Styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-serif);
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+    line-height: 1.2;
+    color: var(--content);
+}
+
+h1 {
+    font-size: var(--font-5xl);
+}
+h2 {
+    font-size: var(--font-4xl);
+}
+h3 {
+    font-size: var(--font-3xl);
+}
+h4 {
+    font-size: var(--font-2xl);
+}
+h5 {
+    font-size: var(--font-xl);
+}
+h6 {
+    font-size: var(--font-lg);
+}
+
+p,
+li,
+span,
+blockquote {
+    font-family: var(--font-family-serif);
+    font-weight: 400;
+    font-size: var(--font-base);
+    margin-bottom: var(--space-md);
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: underline;
+    transition: color 0.2s;
+    &:hover,
+    &:focus {
+        color: var(--secondary);
+    }
+}
+
+blockquote {
+    border-left: 4px solid var(--primary);
+    padding-left: var(--space-md);
+    color: #2a2a2a;
+    font-style: italic;
+    margin: var(--space-lg) 0;
+}
+
+code,
+pre {
+    font-family: var(--font-family-mono);
+    background: #f5f5f5;
+    padding: 0.2em 0.4em;
+    border-radius: 0.25em;
+    font-size: 0.95em;
+}
+
+ul,
+ol {
+    margin-left: var(--space-lg);
+    margin-bottom: var(--space-md);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #cccccc;
+    margin: var(--space-lg) 0;
+}

@@ -1,0 +1,21 @@
+section#welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h1 {
+        font-size: 4rem;
+        font-family: var(--font-family-serif);
+        font-weight: 400;
+        text-align: center;
+        color: #0551cf;
+    }
+
+    p {
+        font-family: var(--font-family-quattro);
+        font-weight: 400;
+        color: #a3a7b0;
+    }
+}

@@ -5,3 +5,7 @@ edition = "2024"
 
 [dependencies]
 leptos = { version = "0.8.5", features = ["csr"] }
+leptos_styles = { path = "../leptos_styles" }
+web-sys = "0.3"
+wasm-bindgen = "0.2"
+leptos-use = "0.16.2"
